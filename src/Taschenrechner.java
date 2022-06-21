@@ -25,7 +25,10 @@ public class Taschenrechner implements ActionListener {
         frame.setLayout(null);
 
 
-
+        textField = new JTextField();
+        textField.setBounds(50,25,300,50);
+        textField.setFont(myFont);
+        frame.add(textField);
         frame.setVisible(true);
 
         }
