@@ -28,7 +28,20 @@ public class Taschenrechner implements ActionListener {
         textField = new JTextField();
         textField.setBounds(50,25,300,50);
         textField.setFont(myFont);
-        frame.add(textField);
+        textField.setEditable(false);
+
+                addButton = new JButton("+");
+                subButton = new JButton("-");
+                mulButton = new JButton("*");
+                divButton = new JButton("/");
+                decButton = new JButton(".");
+                equButton = new JButton("=");
+                delButton = new JButton("Delete");
+                clrButton = new JButton("Clear");
+
+
+
+                frame.add(textField);
         frame.setVisible(true);
 
         }
