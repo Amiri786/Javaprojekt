@@ -39,6 +39,28 @@ public class Taschenrechner implements ActionListener {
                 delButton = new JButton("Delete");
                 clrButton = new JButton("Clear");
 
+                functionButtons[0] = addButton;
+                functionButtons[1] = subButton;
+                functionButtons[2] = mulButton;
+                functionButtons[3] = divButton;
+                functionButtons[4] = decButton;
+                functionButtons[5] = equButton;
+                functionButtons[6] = delButton;
+                functionButtons[7] = clrButton;
+
+                for(int i =0;i<8;i++){
+                        functionButtons[i].addActionListener(this);
+                        functionButtons[i].setFont(myFont);
+                        functionButtons[i].setFocusable(false);
+
+                }
+                for(int i =0;i<10;i++){
+                     numberButton[i] = new JButton(String.valueOf(i));
+                        numberButton[i].addActionListener(this);
+                        numberButton[i].setFont(myFont);
+                        numberButton[i].setFocusable(false);
+
+                }
 
 
                 frame.add(textField);
